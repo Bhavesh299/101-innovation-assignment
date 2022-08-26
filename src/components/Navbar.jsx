@@ -5,6 +5,7 @@ import "./food.css";
 export const Navbar = () => {
 
   const [isOpen, setIsOpen] = useState(false) ;
+
   const navigate = useNavigate();
   
   return (
@@ -14,8 +15,12 @@ export const Navbar = () => {
         <div className="px-6 cursor-pointer hover" onClick={() => {
               navigate(`./`);
             }}>Home</div>
-        <div className="px-6 hover">Sign Up</div>
-        <div className="px-6 hover">Login</div>
+        <div className="px-6 hover cursor-pointer" onClick={() => {
+              navigate(`./SignUp`);
+            }}>Sign Up</div>
+        <div className="px-6 hover cursor-pointer" onClick={() => {
+              navigate(`./Login`);
+            }}>Login</div>
       </div>
       <svg
         onClick={() => {
@@ -39,8 +44,12 @@ export const Navbar = () => {
           <div className="px-8 py-2 cursor-pointer" onClick={() => {
               navigate(`./`);
             }} >Home</div>
-          <div className="px-8 p-2">Sign Up</div>
-          <div className="px-8 py-2">Login</div>
+          <div className="px-8 p-2" onClick={() => {
+              navigate(`./SignUp`);
+            }}>Sign Up</div>
+          <div className="px-8 py-2" onClick={() => {
+            navigate(`./Login`);
+          }}>Login</div>
         </div>
       ) : null}
     </div>
