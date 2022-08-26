@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import "./food.css";
 
 export const Navbar = () => {
 
@@ -7,14 +8,14 @@ export const Navbar = () => {
   const navigate = useNavigate();
   
   return (
-    <div className="flex justify-between bg-gray-500 text-white py-5">
-      <div className="ml-5">101 INNOVATION</div>
+    <div className="flex justify-between nav text-white py-5">
+      <div className="ml-5 hover">101 INNOVATION</div>
       <div className="flex justify-evenly md:hidden">
-        <div className="px-6 cursor-pointer" onClick={() => {
+        <div className="px-6 cursor-pointer hover" onClick={() => {
               navigate(`./`);
             }}>Home</div>
-        <div className="px-6">Sign Up</div>
-        <div className="px-6">Login</div>
+        <div className="px-6 hover">Sign Up</div>
+        <div className="px-6 hover">Login</div>
       </div>
       <svg
         onClick={() => {

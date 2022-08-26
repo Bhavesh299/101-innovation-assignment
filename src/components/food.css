@@ -34,6 +34,11 @@ font-weight: bold;
 margin-bottom: 10px;
 background-image: linear-gradient(to right, red , yellow);
 border-radius: 5px;
+/* cursor: pointer; */
+}
+.map_item:hover{
+  background-image: linear-gradient(to right, rgb(102, 255, 0) , rgb(8, 8, 8));
+  font-family:cursive;
 }
 .p_div{
     margin: auto;
@@ -45,9 +50,33 @@ select{
   color: rgb(10, 10, 10);
 }
 .Filterdiv{
+
  margin-left: 70%;
 }
 .div{
   transition-property: none;
+}
+.selectfilter{
+  background-image: linear-gradient(to right, red , yellow);
+  border-radius: 10px;
+}
+.selectsort{
+  background-image: linear-gradient(to right, red , yellow);
+  border-radius: 10px;
+}
+.selectsort:hover{
+  background-image: linear-gradient(to right, red , rgb(66, 9, 235));
+  font-weight: bold;
+}
+.selectfilter:hover{
+  background-image: linear-gradient(to right, red , rgb(70, 6, 230));
+  font-weight: bold;
+}
+.nav{
+  background-color: black;
+}
+.hover:hover{
+  font-weight: bold;
+  font-size: medium;
 }
 

@@ -62,7 +62,7 @@ export const FoodList = () => {
     <div className="div"  >
       <div className="flex justify-around mt-4">
        <div className="Filterdiv">
-        <select onChange={ HandelChangeFilter}>
+        <select className="selectfilter" onChange={ HandelChangeFilter}>
         <option value="">Filter By Cetogory</option>
         <option value="Regular Menu" > Regular Menu</option>
         <option value="Breakfast Menu" > Breakfast Menu</option>
@@ -72,7 +72,7 @@ export const FoodList = () => {
         </select>
         </div>
         <div className="div2">
-        <select onChange={ HandelChangeSort}>
+        <select className="selectsort" onChange={ HandelChangeSort}>
           <option value="">Sort By Sugar</option>
         <option value="High To Low"> High To Low</option>
         <option value="Low To High"> Low To High</option>
@@ -89,8 +89,8 @@ export const FoodList = () => {
           key={item.Id}
           className=" w-3/5 m-auto md:w-full w-80 "
           >
-        <div className="m-3 rounded-md border-4 w-full ">
-              <img
+        <div className="m-3  w-full ">
+              <img className="rounded-xl"
                 src="https://media.glamour.com/photos/6232428d3cd68a607606b849/master/w_2667,h_1500,c_limit/factor%20healthy%20meal%20delivery.png"
                 alt="Image"
               />
@@ -99,6 +99,8 @@ export const FoodList = () => {
               <p className="mt-6">Name:- {item.Menu_Items} 
               </p>
               <p className=""> Category:- {item.Menu_Category} 
+              </p>
+              <p className=""> Category:- {item.Total_Sugars_g} 
               </p>
             </div >
             
