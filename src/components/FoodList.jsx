@@ -109,7 +109,7 @@ export const FoodList = () => {
               navigate(`./FoodDetails/${item.Id}`);
             }}
             >More Details</button>
-              <button className="button">Add To favourite</button>
+              <button className="button">Add To Favourite</button>
             </div>
          
           </div>

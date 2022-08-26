@@ -73,6 +73,8 @@ select{
   font-weight: bold;
 }
 .nav{
+  position: sticky;
+  top: 0;
   background-color: black;
 }
 .hover:hover{
