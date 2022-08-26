@@ -31,9 +31,9 @@ export const Login = () => {
   
 
       <div className='or_name' >OR</div>
-      <Link to="/register" className='link' >
+      <Link to="/SignUp" className='link' >
         <div className ="button-res" >
-          Register
+         Sign-Up
         </div>
       </Link>
       

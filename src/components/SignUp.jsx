@@ -14,7 +14,7 @@ import React from 'react'
 
         <div className="register">
         {/* <ToastContainer /> */}
-        <h1>Register</h1>
+        <h1>Sign-Upr</h1>
         <input
           type="text"
           name="name"
@@ -45,7 +45,7 @@ import React from 'react'
         ></input>
   
         <div  className="button-res">
-          Register
+          Sign-Up
         </div>
   
         <div className="or_name">OR</div>
