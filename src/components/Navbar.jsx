@@ -11,15 +11,23 @@ export const Navbar = () => {
   return (
     <div className="flex justify-between nav text-white py-5">
       <div className="ml-5 hover">101 INNOVATION</div>
-      <div className="flex justify-evenly md:hidden">
+      <div onClick={()=>{
+        setIsOpen(!isOpen)
+      }} className="flex justify-evenly md:hidden">
         <div className="px-6 cursor-pointer hover" onClick={() => {
+         
               navigate(`./`);
+              
             }}>Home</div>
         <div className="px-6 hover cursor-pointer" onClick={() => {
+         
               navigate(`./SignUp`);
+              
             }}>Sign Up</div>
         <div className="px-6 hover cursor-pointer" onClick={() => {
+        
               navigate(`./Login`);
+              
             }}>Login</div>
       </div>
       <svg

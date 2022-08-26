@@ -62,7 +62,7 @@ export const FoodList = () => {
     <div className="div"  >
       <div className="flex justify-around mt-4">
        <div className="Filterdiv">
-        <select className="selectfilter" onChange={ HandelChangeFilter}>
+        <select className="selectfilter py-1.5" onChange={ HandelChangeFilter}>
         <option value="">Filter By Cetogory</option>
         <option value="Regular Menu" > Regular Menu</option>
         <option value="Breakfast Menu" > Breakfast Menu</option>
@@ -72,7 +72,7 @@ export const FoodList = () => {
         </select>
         </div>
         <div className="div2">
-        <select className="selectsort" onChange={ HandelChangeSort}>
+        <select className="selectsort py-1.5" onChange={ HandelChangeSort}>
           <option value="">Sort By Sugar</option>
         <option value="High To Low"> High To Low</option>
         <option value="Low To High"> Low To High</option>
@@ -82,7 +82,7 @@ export const FoodList = () => {
         </div>
       
       </div>
-      <div className="mt-5 rounded-md maindiv  text-center ">
+      <div className="mt-5 rounded-md grid grid-cols-3 gap-10 text-center md:flex flex-col">
       {Data1.map((item) => {
         return (
           <div
@@ -95,7 +95,7 @@ export const FoodList = () => {
                 alt="Image"
               />
             </div>
-            <div className=" w-72 m-3">
+            <div className=" w-72 m-3 m-auto md:ml-16">
               <p className="mt-6">Name:- {item.Menu_Items} 
               </p>
               <p className=""> Category:- {item.Menu_Category} 
@@ -104,7 +104,7 @@ export const FoodList = () => {
               </p>
             </div >
             
-            <div className="flex justify-around ">
+            <div className="flex justify-around md:ml-5">
               <button className="button" onClick={() => {
               navigate(`./FoodDetails/${item.Id}`);
             }}

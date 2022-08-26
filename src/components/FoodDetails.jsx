@@ -58,7 +58,7 @@ export const FoodDetails = () => {
   return (
     <div className="w-full mt-5 ">
       <div className=" m-auto  mb-5 md:w-full ">
-        <div className="img-details m-auto w-2/5 ">
+        <div className="img-details m-auto w-2/5 md:w-full">
         <img className="rounded-xl mb-4"
                 src="https://media.glamour.com/photos/6232428d3cd68a607606b849/master/w_2667,h_1500,c_limit/factor%20healthy%20meal%20delivery.png"
                 alt="Image"
@@ -67,15 +67,15 @@ export const FoodDetails = () => {
         <div className="  md:ml-10">
         {food.map((e) => {
         return (
-          <div className="p_div">
-          <p className="map_item ">Menu_Items:- {e.Menu_Items}</p>
-          <p className="map_item ">Menu_Category:- {e.Menu_Category}</p>
-          <p className="map_item ">Per_Serve_Size:- {e.Per_Serve_Size}</p>
-          <p className="map_item ">Protein_g:- {e.Protein_g}</p>
-          <p className="map_item ">Sodium_mg:- {e.Sodium_mg}</p>
-          <p className="map_item ">Total_Sugars_g:- {e.Total_Sugars_g}</p>
-          <p className="map_item ">Total_fat_g:- {e.Total_fat_g}</p>
-          <p className="map_item ">Total_carbohydrate_g:- {e.Total_carbohydrate_g}</p>
+          <div className="p_div font-lg md:font-sm ">
+          <p className="map_item m-1 ">Menu_Items:- {e.Menu_Items}</p>
+          <p className="map_item m-1 ">Menu_Category:- {e.Menu_Category}</p>
+          <p className="map_item m-1 ">Per_Serve_Size:- {e.Per_Serve_Size}</p>
+          <p className="map_item m-1 ">Protein_g:- {e.Protein_g}</p>
+          <p className="map_item m-1 ">Sodium_mg:- {e.Sodium_mg}</p>
+          <p className="map_item m-1 ">Total_Sugars_g:- {e.Total_Sugars_g}</p>
+          <p className="map_item m-1 ">Total_fat_g:- {e.Total_fat_g}</p>
+          <p className="map_item m-1 ">Total_carbohydrate_g:- {e.Total_carbohydrate_g}</p>
           
           
           </div>
