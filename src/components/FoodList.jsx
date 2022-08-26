@@ -41,6 +41,22 @@ export const FoodList = () => {
       });
       SetData1(arr);
     };
+    const HandelChangeSort = (e)=>{
+
+      const key = e.target.value;
+      console.log(key)
+      // Setsort(key);
+      if (key === "Low To High") {
+        SetData1(Data.sort((a, b) => a.Total_Sugars_g - b.Total_Sugars_g));
+        Setsort(key)
+      }
+      if (key === "High To Low") {
+        SetData1(Data.sort((a, b) => b.Total_Sugars_g - a.Total_Sugars_g));
+        Setsort(key)
+      }
+    };
+    
+
 
   return (
     <div className="div"  >
@@ -56,10 +72,10 @@ export const FoodList = () => {
         </select>
         </div>
         <div className="div2">
-        <select name="" id="">
-          <option value="Filter By Cetogory">Sort By Sugar</option>
-        <option value="Regular Menu"> High To Low</option>
-        <option value="Breakfast Menu"> Low To High</option>
+        <select onChange={ HandelChangeSort}>
+          <option value="">Sort By Sugar</option>
+        <option value="High To Low"> High To Low</option>
+        <option value="Low To High"> Low To High</option>
        
        
         </select>
