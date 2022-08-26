@@ -8,3 +8,31 @@ tr {
 li {
   width: 40rem;
 }
+.maindiv{
+  display: grid ;
+  grid-template-columns: repeat(3,1fr) ;
+  grid-gap: 20px ;
+  /* border: 1px solid red; */
+}
+.button{
+  background-image: linear-gradient(to right, red , rgb(14, 14, 13));
+  /* height: ; */
+  padding: 2%;
+  border-radius: 5px;
+}
+.button:hover{
+  background-image: linear-gradient(to right, red , yellow);
+  font-weight: bold;
+}
+/* .img-details{
+  border-radius: 10px;
+} */
+.map_item{
+  width: 90%;
+  height: 40px;
+  margin: auto;
+  border-radius: 5px;
+  background-image: linear-gradient(to right, red , yellow);
+  text-align: center;
+
+}

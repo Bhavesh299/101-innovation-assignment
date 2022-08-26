@@ -3,6 +3,7 @@ import { FoodList } from "./components/FoodList";
 import { Navbar } from "./components/Navbar";
 import { Routes, Route } from "react-router-dom";
 import { FoodDetails } from "./components/FoodDetails";
+import "./App.css";
 
 const App = () => {
   return (
