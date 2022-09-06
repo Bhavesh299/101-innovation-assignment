@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import "./module.css"
+import "./dog.css"
 export const Puppy = () => {
   const [dogData, setdogData] = useState([]);
   const {breed_name} = useParams();

@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useState } from "react";
-import "./module.css"
+import "./dog.css"
 export const Search = () => {
   const [enter, setEnter] = useState("");
   const [data, setData] = useState([]);

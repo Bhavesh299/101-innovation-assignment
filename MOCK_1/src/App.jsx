@@ -1,9 +1,9 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import { Home } from "./Pages/Home.jsx";
-import { Navbar } from "./Pages/Navbar.jsx";
-import { Puppy } from "./Pages/Puppy.jsx";
-import { Search } from "./Pages/Search.jsx";
+import { Home } from "./Components/Home";
+import { Navbar } from "./Components/Navbar";
+import { Puppy } from "./Components/Puppy";
+import { Search } from "./Components/Search";
 function App() {
  
   return (
